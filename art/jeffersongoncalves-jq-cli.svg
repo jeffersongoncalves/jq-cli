@@ -1,0 +1,79 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0B"/>
+      <stop offset="1" stop-color="#18181B"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#FBBF24" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#FBBF24" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#27272A" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.4"/>
+  <ellipse cx="950" cy="310" rx="410" ry="290" fill="url(#glow)"/>
+
+  <!-- top label -->
+  <circle cx="82" cy="66" r="4" fill="#FBBF24"/>
+  <text x="100" y="71" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500" letter-spacing="2" fill="#A1A1AA">COMMAND-LINE JSON PROCESSOR</text>
+
+  <!-- title -->
+  <text x="80" y="250" font-family="Inter, system-ui, sans-serif" font-size="76" font-weight="800" letter-spacing="-2" fill="#FAFAFA">jq-cli</text>
+
+  <!-- tagline -->
+  <text x="80" y="306" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="600" fill="#FBBF24">jq for Windows, in pure PHP</text>
+
+  <!-- description -->
+  <text x="80" y="350" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="400" fill="#A1A1AA">A faithful jq clone: lexer + parser + generator-based</text>
+  <text x="80" y="374" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="400" fill="#A1A1AA">interpreter. No native jq, no WSL, no PATH surgery.</text>
+
+  <!-- footer pills -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500">
+    <rect x="80" y="545" width="92" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="126" y="565" text-anchor="middle" fill="#A1A1AA">PHP 8.2+</text>
+
+    <rect x="182" y="545" width="118" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="241" y="565" text-anchor="middle" fill="#A1A1AA">Laravel Zero</text>
+
+    <rect x="310" y="545" width="70" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="345" y="565" text-anchor="middle" fill="#A1A1AA">PHAR</text>
+
+    <rect x="390" y="545" width="104" height="30" rx="15" fill="#18181B" stroke="#FBBF24"/>
+    <text x="442" y="565" text-anchor="middle" fill="#FBBF24">Windows</text>
+
+    <rect x="504" y="545" width="56" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="532" y="565" text-anchor="middle" fill="#A1A1AA">MIT</text>
+  </g>
+
+  <text x="1120" y="595" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="500" fill="#52525B">@jeffersongoncalves</text>
+
+  <!-- terminal mock -->
+  <g>
+    <rect x="690" y="170" width="430" height="290" rx="12" fill="#0A0A0B" stroke="#3F3F46"/>
+    <rect x="690" y="170" width="430" height="40" rx="12" fill="#18181B"/>
+    <rect x="690" y="198" width="430" height="12" fill="#18181B"/>
+    <circle cx="714" cy="190" r="6" fill="#EF4444"/>
+    <circle cx="736" cy="190" r="6" fill="#FBBF24"/>
+    <circle cx="758" cy="190" r="6" fill="#10B981"/>
+    <text x="905" y="195" text-anchor="middle" font-family="ui-monospace, monospace" font-size="13" fill="#52525B">jq.bat</text>
+
+    <g font-family="ui-monospace, monospace" font-size="16">
+      <text x="712" y="252" fill="#FBBF24">$ <tspan fill="#FAFAFA">jq</tspan> <tspan fill="#10B981">".user.name"</tspan> <tspan fill="#71717A">data.json</tspan></text>
+      <text x="712" y="282" fill="#A1A1AA">"Sam"</text>
+
+      <text x="712" y="326" fill="#FBBF24">$ <tspan fill="#FAFAFA">echo</tspan> <tspan fill="#71717A">[1,2,3]</tspan> | <tspan fill="#FAFAFA">jq</tspan> <tspan fill="#10B981">"add"</tspan></text>
+      <text x="712" y="356" fill="#A1A1AA">6</text>
+
+      <text x="712" y="400" fill="#FBBF24">$ <tspan fill="#FAFAFA">jq</tspan> <tspan fill="#10B981">"map(.*2)"</tspan></text>
+      <text x="712" y="430" fill="#A1A1AA">[2,4,6]</text>
+    </g>
+  </g>
+</svg>
