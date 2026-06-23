@@ -11,4 +11,4 @@ All notable changes to `jq-cli` will be documented in this file.
 - Native and jq-defined builtins, regex (`test`/`match`/`capture`/`scan`/`sub`/`gsub`), `@`-formats, update operators (`=`, `|=`, `+=`, ...), and path expressions (`path`, `getpath`, `setpath`, `delpaths`, `del`).
 - jq-compatible CLI flags (`-n -r -j -c -s -R -a -S -e --tab --indent --arg --argjson --slurpfile --rawfile --args --jsonargs -f`) and exit codes.
 - Concatenated JSON / NDJSON input, `--slurp`, `--raw-input`, `input`/`inputs`.
-- Windows-first distribution: PHAR plus `jq.bat` / `phpjq.bat` wrappers.
+- Windows-first distribution: PHAR plus a `jq.bat` wrapper.

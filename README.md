@@ -4,7 +4,7 @@
 
 </div>
 
-# jq-cli (phpjq)
+# jq-cli
 
 A **`jq` clone written in pure PHP** on top of [Laravel Zero](https://laravel-zero.com).
 It implements the jq language with its own lexer, parser and generator-based
@@ -56,17 +56,35 @@ WSL, no Git Bash `PATH` surgery.
   ```
   or via [Scoop](https://scoop.sh): `scoop install php`.
 
-### Install the binary
+### Option A — Composer (recommended)
 
-1. Build the PHAR (see [Building](#building)) or grab `jq.phar` from a release.
-2. Copy `jq.phar`, `jq.bat` and `phpjq.bat` into a folder, e.g. `%USERPROFILE%\bin`.
+```console
+composer global require jeffersongoncalves/jq-cli
+```
+
+Make sure Composer's global `bin` directory is on your `PATH`:
+
+- **Windows:** `%USERPROFILE%\AppData\Roaming\Composer\vendor\bin`
+- **Linux/macOS:** `~/.composer/vendor/bin` or `~/.config/composer/vendor/bin`
+
+Then the `jq` command is available everywhere:
+
+```console
+echo {"a":1} | jq ".a"
+```
+
+### Option B — Standalone PHAR (Windows, no Composer)
+
+1. Build the PHAR (see [Building](#building)) or grab `jq.phar` from the
+   [releases page](https://github.com/jeffersongoncalves/jq-cli/releases).
+2. Copy `jq.phar` and `jq.bat` into a folder, e.g. `%USERPROFILE%\bin`.
 3. Add that folder to your **user `PATH`**:
    ```console
    setx PATH "%PATH%;%USERPROFILE%\bin"
    ```
 4. **Reopen** your terminal so the new `PATH` takes effect.
 
-Now `jq` (drop-in alias) and `phpjq` both work from CMD and PowerShell.
+Now `jq` works from CMD and PowerShell.
 
 ---
 
@@ -210,8 +228,7 @@ php -d phar.readonly=0 build-phar.php
 composer install        # restore dev tools afterwards
 ```
 
-The `builds/jq.bat` and `builds/phpjq.bat` wrappers simply call
-`php jq.phar %*`.
+The `builds/jq.bat` wrapper simply calls `php jq.phar %*`.
 
 ---
 
