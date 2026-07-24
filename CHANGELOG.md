@@ -2,6 +2,10 @@
 
 All notable changes to `jq-cli` will be documented in this file.
 
+## 1.0.1 - 2026-07-24
+
+Release 1.0.1
+
 ## 1.0.0 - 2026-06-23
 
 Initial release of jq-cli — a jq clone written in pure PHP on Laravel Zero.
