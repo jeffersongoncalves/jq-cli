@@ -25,6 +25,13 @@ $ echo {"user":{"name":"Sam","roles":["admin","dev"]}} | jq ".user.roles[]"
 
 ---
 
+<p align="center">
+  <a href="https://github.com/jeffersongoncalves/jq-cli/actions"><img src="https://github.com/jeffersongoncalves/jq-cli/actions/workflows/run-tests.yml/badge.svg" alt="Tests" /></a>
+  <a href="https://packagist.org/packages/jeffersongoncalves/jq-cli"><img src="https://img.shields.io/packagist/dt/jeffersongoncalves/jq-cli" alt="Total Downloads" /></a>
+  <a href="https://github.com/jeffersongoncalves/jq-cli/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jeffersongoncalves/jq-cli" alt="License" /></a>
+  <img src="https://img.shields.io/badge/php-%3E%3D8.2-8892BF" alt="PHP 8.2+" />
+</p>
+
 ## Why isn't `jq` found on Windows?
 
 On Windows `jq` "is never found" for a stack of reasons:
