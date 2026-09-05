@@ -6,6 +6,8 @@
 
 # jq-cli
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
+
 A **`jq` clone written in pure PHP** on top of [Laravel Zero](https://laravel-zero.com).
 It implements the jq language with its own lexer, parser and generator-based
 interpreter — not field extraction with regexes — so stream semantics
