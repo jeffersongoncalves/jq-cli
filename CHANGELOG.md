@@ -1,18 +1,55 @@
 # Changelog
 
-All notable changes to `jq-cli` will be documented in this file.
+All notable changes to this project will be documented in this file.
 
-## 1.0.1 - 2026-07-24
+## [1.0.2] - 2026-09-08
 
-Release 1.0.1
+### Bug Fixes
 
-## 1.0.0 - 2026-06-23
+- **deps:** Update guzzlehttp/guzzle to patch security advisories
+- **ci:** Publish release as draft until PHAR asset is attached
+- **ci:** Use the correct resolve-version output in the publish step
 
-Initial release of jq-cli — a jq clone written in pure PHP on Laravel Zero.
+### CI/CD
 
-- Full jq-language interpreter: lexer, precedence-climbing parser, and a generator-based evaluator honouring jq's stream semantics.
-- Native and jq-defined (prelude) builtins, PCRE regex (test/match/capture/scan/sub/gsub), @-formats, update operators, and path expressions.
-- jq-compatible CLI flags and exit codes; concatenated JSON / NDJSON input, --slurp, --raw-input, input/inputs.
-- Windows-first distribution: PHAR plus a jq.bat wrapper.
+- Pin actions to commit SHA, add dependabot cooldown/composer, trim dist archive
+- **release:** Generate CHANGELOG.md and release notes with git-cliff
 
-Install: composer global require jeffersongoncalves/jq-cli
+### Dependencies
+
+- **deps:** Bump actions/checkout from 6.1.0 to 7.0.1
+- **deps:** Bump actions/cache from 5.1.0 to 6.1.0
+- **deps:** Bump shivammathur/setup-php
+- **deps:** Bump orhun/git-cliff-action from 4.8.0 to 4.9.0
+
+### Documentation
+
+- Add Buy Me a Coffee sponsor link
+- Standardize README section structure
+
+### Miscellaneous Tasks
+
+- Bump guzzlehttp/guzzle and guzzlehttp/psr7 for security advisories
+- Add GitHub Sponsors to FUNDING.yml
+
+## [1.0.1] - 2026-07-24
+
+### CI/CD
+
+- Replace split build/changelog/publish-phar workflows with a single release job
+
+## [1.0.0] - 2026-06-23
+
+### Documentation
+
+- Adicionar instalação via composer global e remover referências a phpjq
+
+### Features
+
+- Implementar jq-cli, clone do jq em PHP puro sobre Laravel Zero
+
+### Testing
+
+- Adicionar testes unitários e corrigir CI (tests/Unit ausente)
+
+
